@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap');
+
+:root {
+    /* COLORS */
+    --yellow: hsl(47, 88%, 63%);
+    --white: #ffffff;
+    --grey-base: hsl(0, 0%, 42%);
+    --grey-shade: hsl(0, 0%, 7%);
+
+    /* FONT FAMILY */
+    --font-family: 'Figtree', sans-serif;
+
+    /* FONT WEIGHTS */
+    --font-weight-normal: 500;
+    --font-weight-bold: 800;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--yellow);
+    font-family: var(--font-family);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.blog-preview-card {
+    max-width: 330px;
+    background-color: var(--white);
+    padding: 1.75rem;
+    border-radius: 15px;
+    border: 1px var(--grey-shade) solid;
+    box-shadow: 8px 8px 0 0 var(--grey-shade);
+    /* offset-x offset-y blur-radius spread-radius color */
+}
+
+.blog-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.blog-tags-list {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.blog-tag {
+    display: inline-block;
+    background-color: var(--yellow);
+    font-size: 1.1rem;
+    font-weight: var(--font-weight-bold);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.blog-date {
+    margin-bottom: 1rem;
+}
+
+.blog-title {
+    margin-bottom: 1rem;
+}
+
+.blog-description {
+    font-size: 1.3rem;
+    color: var(--grey-base);
+    margin-bottom: 2rem;
+}
+
+.blog-author-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.blog-author-image {
+    width: 10%;
+    height: auto;
+}
+
+.blog-author-name {
+    font-size: 1.3rem;
+    font-weight: var(--font-weight-bold);
+}
+
+.attribution { font-size: 0.6875rem; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+ul {
+    list-style: none;
+}
