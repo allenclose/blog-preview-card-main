@@ -38,7 +38,7 @@ body {
 }
 
 .blog-preview-card {
-    max-width: 330px;
+    max-width: 300px;
     background-color: var(--white);
     padding: 1.75rem;
     border-radius: 15px;
